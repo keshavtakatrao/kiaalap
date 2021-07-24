@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+console.log = console.warn = console.error = () => {};
+console.error('Something bad happened.');
 ReactDOM.render(
   <React.StrictMode>
     <App />
